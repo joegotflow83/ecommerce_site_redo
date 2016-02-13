@@ -1,0 +1,3 @@
+django_ecommerce_env
+*.pyc
+ecommerce_site/ecommerce_site/settings.py
