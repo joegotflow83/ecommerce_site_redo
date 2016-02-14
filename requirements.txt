@@ -1,1 +1,4 @@
 Django==1.9.2
+django-forms-bootstrap==3.0.1
+requests==2.9.1
+stripe==1.29.1

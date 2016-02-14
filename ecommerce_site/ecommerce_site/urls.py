@@ -16,12 +16,17 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
-from main import views
+import main
 import contact
+import payments
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', views.index, name='index'),
-    url(r'^page/', include('django.contrib.flatpages.urls')),
+    url(r'^$', 'main.views.index', name='index'),
+    url(r'^page/', 'main.views.about', name='about'),
     url(r'^contact/', 'contact.views.contact', name='contact'),
+    url(r'^sign_in$', 'payments.views.sign_in', name='sign_in'),
+    url(r'^sign_out$', 'payments.views.sign_out', name='sign_out'),
+    url(r'^register$', 'payments.views.register', name='register'),
+    url(r'^edit$', 'payments.views.edit', name='edit'),
 ]

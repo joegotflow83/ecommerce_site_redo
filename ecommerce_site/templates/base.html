@@ -15,12 +15,22 @@
 
 	<style>
 		.body {
-			padding-top: 40px;
+			padding-top: 20px;
 			padding-bottom: 20px;
 		}
 
+		.jumbotron {
+			background-image: url(http://nutritionthatfits.com/wp-content/uploads/2015/06/fruit-in-water.jpg); 
+		}
+
 		.masthead {
-			padding-left: 40px;
+			padding-left: 50px;
+		}
+
+		.footer {
+			padding-bottom: 5px;
+			padding-left: 10px;
+			padding-top: 50px;
 		}
 	</style>
 
@@ -42,7 +52,7 @@
 		<div class="masthead">
 			<ul class="nav nav-pills">
 		  		<li role="presentation"><a href="{% url 'index' %}">Home</a></li>
-		  		<li role="presentation"><a href="/pages/about/">About</a></li>
+		  		<li role="presentation"><a href='{% url 'about' %}'>About</a></li>
 		  		<li role="presentation"><a href="{% url 'contact' %}">Contact</a></li>
 			</ul>
 		</div>
