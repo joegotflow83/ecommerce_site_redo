@@ -2,7 +2,7 @@ from django.db import models
 import datetime
 
 class Contact(models.Model):
-
+	"""Create a table for users to contact staff"""
 
 	name = models.CharField(max_length=32)
 	email = models.EmailField(max_length=255)

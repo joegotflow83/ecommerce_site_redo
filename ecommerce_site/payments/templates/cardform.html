@@ -27,12 +27,12 @@
   <div class="input">
     <select class="small" id="expiry_month">
     {% for month in months %}
-    <option value="{{ month }}"{% if time.month == month %} selected{% endif %}>{{ month }}</option>
+    <option value="{{ month }}"{% if soon.month == month %} selected{% endif %}>{{ month }}</option>
     {% endfor %}
     </select><br/>
     <select class="small" id="expiry_year">
     {% for year in years %}
-    <option value="{{ year }}"{% if time.year == year %} selected{% endif %}>{{ year }}</option>
+    <option value="{{ year }}"{% if soon.year == year %} selected{% endif %}>{{ year }}</option>
     {% endfor %}
     </select>
   </div>
@@ -40,5 +40,5 @@
 <br/>
 </div>
 <div class="actions">
-<input class="btn btn-primary" id="user_submit" name="commit" type="submit" value="Register">
+<input class="btn primary" id="user_submit" name="commit" type="submit" value="Register">
 </div>
